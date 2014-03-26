@@ -5,11 +5,8 @@ set -e
 # The location of the pre-compiled xmlsec1 binary.
 VENDORED_XMLSEC1="https://s3.amazonaws.com/mmvendored/xmlsec1-1.2.tgz"
 # change to correct directory.
-cd .heroku
-if [ ! -d 'vendor' ]; then
-    mkdir vendor
-fi
-cd vendor
+mkdir -p .heroku/vendor
+cd .heroku/vendor
 
 # download and untar xmlsec
 curl -s -L -o tmp-libxmlsec1.tar.gz $VENDORED_XMLSEC1
