@@ -7,8 +7,8 @@ VENDORED_XMLSEC1="https://s3.amazonaws.com/mmvendored/xmlsec1-1.2.tgz"
 # change to correct directory.
 BUILD_DIR=$1
 cd $BUILD_DIR
-mkdir -p .heroku/xmlsec1-1.2
-cd .heroku/xmlsec11-1.2
+mkdir -p ".heroku/xmlsec1-1.2"
+cd ".heroku/xmlsec1-1.2"
 
 # download and untar xmlsec
 curl -s -L -o tmp-libxmlsec1.tar.gz $VENDORED_XMLSEC1
