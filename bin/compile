@@ -13,6 +13,8 @@ cd ".heroku/xmlsec1-1.2"
 # download and untar xmlsec
 curl -s -L -o tmp-libxmlsec1.tar.gz $VENDORED_XMLSEC1
 tar -zxf tmp-libxmlsec1.tar.gz # > /dev/null #TODO Hide this output
+# make symlink
+ln -s bin/xmlsec1 /usr/local/bin/xmlsec1
 rm tmp-libxmlsec1.tar.gz
 
 # export xmlsec loc and flags
