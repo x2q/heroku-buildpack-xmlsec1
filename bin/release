@@ -3,6 +3,5 @@
 echo "---"
 echo "addons:"
 echo "config_vars:"
-echo "  PATH: $PATH:/app/.heroku/xmlsec1-1.2/bin"
 echo "  LD_LIBRARY_PATH: /app/.heroku/xmlsec1-1.2/lib"
 echo "default_process_types:"
